@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Crew Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-nav">
+        <div class="logo">
+            <h1>Crew Intro</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="user-account">
+            <a href="registration.html">Create Account</a>
+        </div>
+    </header>
+    <div class="registration-form">
+        <h2>Create Your Account</h2>
+        <form action="submit_registration.php" method="post">
+            <!-- Personal Details Section -->
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="display-name">Display Name:</label>
+                <input type="text" id="display-name" name="display-name" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <!-- Social Accounts Section -->
+            <div class="form-group">
+                <label for="social-accounts">Social Accounts:</label>
+                <input type="text" id="social-accounts" name="social-accounts" placeholder="Link to your social accounts">
+            </div>
+            <!-- Qualifications and Experience Section -->
+            <div class="form-group">
+                <label for="qualifications">Qualifications and Experience:</label>
+                <textarea id="qualifications" name="qualifications" placeholder="Add your relevant qualifications and prior experience"></textarea>
+            </div>
+            <!-- Role Selection -->
+            <div class="form-group">
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="deck">Deck</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="galley">Galley</option>
+                    <option value="interior">Interior</option>
+                    <option value="getting-started">Getting Started</option>
+                    <option value="specialty">Specialty</option>
+                    <option value="mental-physical-wellbeing">Mental & Physical Wellbeing</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
