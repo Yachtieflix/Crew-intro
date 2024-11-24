@@ -1,17 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-header {
-    background-color: #fff;
-    padding: 10px;
-    border-bottom: 2px solid #ccc;
-}
-body {
-    font-family: Arial, sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
@@ -79,51 +67,32 @@ body {
     font-size: 18px;
 }
 
-.registration-form {
-    margin: 80px auto; /* Adjusted for the fixed top nav */
-    padding: 20px;
-    max-width: 500px;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.registration-form h2 {
-    text-align: center;
-    color: #001f3f;
-}
-
-.registration-form .form-group {
-    margin-bottom: 15px;
-}
-
-.registration-form .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.registration-form .form-group input,
-.registration-form .form-group select,
-.registration-form .form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.registration-form button {
-    width: 100%;
-    padding: 10px;
+.sidebar {
     background-color: #001f3f;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    width: 250px;
+    height: calc(100vh - 60px); /* Adjusted for the top nav bar */
+    position: fixed;
+    top: 60px; /* Adjusted for the top nav bar */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto; /* Allows sidebar to scroll if content exceeds viewport height */
 }
 
-.registration-form button:hover {
-    background-color: #0056b3;
+.content {
+    margin-left: 270px;
+    padding: 80px 20px; /* Adjusted for the top nav bar */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    flex: 1;
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+h1, h2 {
+    color: #001f3f;
 }
